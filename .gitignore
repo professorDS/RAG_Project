@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+
+# Virtual environments
+venv/
+env/
+rag_env/
+
+# Data folders (do NOT upload)
+data/pdfs/
+data/processed_text/
+data/index/
+
+# Logs
+logs/
+
+# OS
+.DS_Store
+Thumbs.db

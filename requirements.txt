@@ -1,0 +1,12 @@
+langchain
+langchain-community
+langchain-text-splitters
+langchain-huggingface
+sentence-transformers
+faiss-cpu
+easyocr
+pymupdf
+tqdm
+numpy
+Pillow
+
