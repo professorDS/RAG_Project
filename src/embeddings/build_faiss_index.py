@@ -4,9 +4,10 @@ from langchain_community.vectorstores import FAISS
 from langchain_text_splitters import RecursiveCharacterTextSplitter
 from src.utils.logger import logger
 
-# Paths
-TEXT_FOLDER = Path("data/processed_text")
-INDEX_FOLDER = Path("data/index")
+# Paths - Use absolute paths
+PROJECT_ROOT = Path(__file__).parent.parent.parent
+TEXT_FOLDER = PROJECT_ROOT / "data" / "processed_text"
+INDEX_FOLDER = PROJECT_ROOT / "data" / "index"
 INDEX_FOLDER.mkdir(parents=True, exist_ok=True)
 
 # Embedding model (fast & good quality)

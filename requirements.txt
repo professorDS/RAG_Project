@@ -9,4 +9,8 @@ pymupdf
 tqdm
 numpy
 Pillow
+streamlit
+transformers
+torch
+click
 

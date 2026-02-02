@@ -1,12 +1,13 @@
+from pathlib import Path
 from langchain_community.vectorstores import FAISS
 from langchain_huggingface import HuggingFaceEmbeddings
 from src.utils.logger import logger
 
 # ================= CONFIG =================
-INDEX_PATH = "data/index"
+# Use absolute path to work from any directory
+INDEX_PATH = str(Path(__file__).parent.parent.parent / "data" / "index")
 EMBEDDING_MODEL = "sentence-transformers/all-MiniLM-L6-v2"
 # ==========================================
-
 
 class FAISSRetriever:
     """
