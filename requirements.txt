@@ -13,4 +13,6 @@ streamlit
 transformers
 torch
 click
+fastapi
+uvicorn[standard]
 
